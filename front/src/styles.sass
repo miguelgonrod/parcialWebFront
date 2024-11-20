@@ -1,0 +1,43 @@
+// Variables de colores
+$blanco: #ffffff
+$negro: #000000
+$azul-suave: #4A90E2 // Un azul suave y moderno
+
+// Estilo global
+body
+  font-family: 'Arial', sans-serif
+  margin: 0
+  padding: 0
+  background-color: #f4f4f4 // Fondo gris claro para el resto de la página
+
+// Navbar
+nav
+  background-color: $negro
+  padding: 1rem 2rem
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: sticky
+  top: 0
+  z-index: 1000
+
+  a
+    text-decoration: none
+    color: $blanco
+    font-size: 1.1rem
+    margin: 0 1.5rem
+    transition: color 0.3s ease
+
+    &:hover
+      color: $azul-suave
+
+  // Agregar un efecto de sombra al hacer scroll
+  &.scrolled
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
+
+// Agregar un poco de espacio entre los elementos si es necesario
+.nav-links
+  display: flex
+  justify-content: space-around
+  flex-grow: 1
+  align-items: center
